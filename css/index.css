@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box {
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    background: #fff;
+}
+.login-box h2 {
+    margin-bottom: 20px;
+}
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #5c5858;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    color: #d4a373;
+    font-size: 12px;
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+button {
+    width: 100%;
+    background-color: #d4a373;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.social-icons a {
+    margin-right: 50px;
+    color: #7e3636;
+    font-size: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.flash-message {
+    background-color: #ffdddd;
+    color: #a33;
+    padding: 10px;
+    border-left: 5px solid #e00;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.flash-message.success {
+    background-color: #ddffdd;
+    color: #3a3;
+    border-left: 5px solid #0a0;
+}
+.flash-message.error {
+    background-color: #ffdddd;
+    color: #a33;
+    border-left: 5px solid #e00;
+}
